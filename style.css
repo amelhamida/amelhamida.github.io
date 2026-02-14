@@ -1,0 +1,173 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', Helvetica, sans-serif;
+    line-height: 1.6;
+    color: #2c3e50;  
+    background-color: #f5f7fa;
+    padding: 40px;
+}
+
+h1 {
+    font-size: 32px;
+    color: #1e3c5c;
+    margin-bottom: 5px;
+    letter-spacing: 1px;
+}
+
+header {
+    text-align: center;
+    margin-bottom: 30px;
+    padding-bottom: 20px;
+    border-bottom: 2px solid #d0d9e0;
+}
+
+header p {
+    color: #4a6fa5;
+    margin: 5px 0;
+}
+
+.profile {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.profile img {
+    border-radius: 8px;
+    border: 3px solid white; 
+    box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+}
+
+.course-grid {
+    display: flex;
+    gap: 40px;
+    margin: 20px 0;
+}
+
+.course-grid ul {
+    flex: 1;
+    list-style-type: square;
+    padding-left: 20px;
+}
+
+.course-grid li {
+    margin-bottom: 8px;
+}
+
+h2 {
+    color: #1e3c5c;
+    font-size: 24px;
+    margin: 40px 0 20px 0;
+    padding-bottom: 8px;
+    border-bottom: 2px solid #b8c9d4;
+}
+
+h3 {
+    color: #2c3e50;
+    font-size: 20px;
+    margin-bottom: 5px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 15px 0;
+    background: white;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.03);
+}
+
+th {
+    background-color: #1e3c5c;
+    color: white;
+    padding: 12px;
+    text-align: left;
+    font-weight: normal;
+}
+
+td {
+    padding: 12px;
+    border-bottom: 1px solid #e1e8ed;
+    vertical-align: top;
+    background: white;
+}
+
+tr:hover {
+    background-color: #f8fafc;
+}
+
+ul {
+    padding-left: 20px;
+    margin: 5px 0;
+    list-style-type: square;
+}
+
+li {
+    margin-bottom: 5px;
+}
+
+#skills ul, section ul {
+    list-style-type: square;
+    list-style-position: inside;
+}
+
+section ul li {
+    margin-bottom: 8px;
+}
+
+.project {
+    display: flex;
+    gap: 30px;
+    align-items: flex-start;
+    margin: 20px 0;
+    padding: 25px;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.03);
+}
+
+.project div {
+    flex: 1;
+}
+
+.project img {
+    border-radius: 6px;
+    border: 1px solid #e1e8ed;
+    max-width: 250px;
+    height: auto;
+}
+
+.project-links {
+    margin-top: 12px;
+}
+
+.project-links a {
+    color: #4a6fa5;
+    text-decoration: none;
+}
+
+.project-links a:hover {
+    text-decoration: underline;
+}
+
+#skills ul {
+    background: white;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.02);
+}
+/* The Specificity Challenge:
+   #skills ul (ID + element) = specificity 1,0,1
+   ul (element) = specificity 0,0,1
+   
+   The #skills ul rule wins because ID selectors have much higher specificity.
+   Even though the ul rule comes later in the CSS, the ID selector overrides it.
+*/
+ul {
+    background: transparent;
+}
