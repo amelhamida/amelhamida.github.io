@@ -3,12 +3,22 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Amel Hamida - Resume</title>
+    <title>Amel Hamida - Portfolio</title>
     <link rel="stylesheet" href="style.css">
 </head>
-<body>
+
+<body> 
+    <nav class="navbar">
+        <div class="logo">Amel Hamida</div>
+        <ul class="nav-links">
+            <li><a href="#about">About</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#gallery">Gallery</a></li>
+        </ul>
+    </nav> 
     <main>
-        <header>
+        <header id="home">
             <h1>AMEL HAMIDA</h1>
             <p>Computer Science Student | Hunter College</p>
             <p>
@@ -22,7 +32,7 @@
             <img src="/assets/IMG.jpg" alt="Profile photo" width="150">
         </div>
 
-        <section>
+        <section id="about">
             <h2>About Me</h2>
             <p>Computer Science student at Hunter. I like building things that are useful and look good. Started with Java and Python, now learning web development. Always down to learn something new.</p>
         </section>
@@ -89,7 +99,7 @@
             </table>
         </section>
 
-        <section>
+        <section id="skills">
             <h2>Technical Skills</h2>
             <ul>
                 <li><strong>Languages:</strong> Java, Python, C++, JavaScript, HTML/CSS</li>
@@ -98,7 +108,7 @@
             </ul>
         </section>
 
-        <section>
+        <section id ="projects">
             <h2>Project</h2>
             <div class="project">
                 <div>
@@ -116,6 +126,34 @@
                 <img src="taskmanager_img.png" alt="Task Manager App Screenshot" width="250">
             </div>
         </section>
+
+        <!-- gallery section (new) -->
+        <section id="gallery">
+            <h2>Hobbies & Interests</h2>
+            <div class="gallery-grid">
+                <!-- puzzle -->
+                <div class="gallery-card">
+                    <img src="/assets/puzzle.jpg" alt="Puzzles">
+                    <h3>Puzzles</h3>
+                    <p>I enjoy solving jigsaw puzzles and brain teasers in my free time.</p>
+                </div>
+                
+                <!-- coloring -->
+                <div class="gallery-card">
+                    <img src="/assets/coloring.jpg" alt="Coloring">
+                    <h3>Coloring</h3>
+                    <p>Adult coloring books help me relax and de-stress. I enjoy mandalas and nature scenes with vibrant colors.</p>
+                </div>
+                
+                <!-- reading -->
+                <div class="gallery-card">
+                    <img src="/assets/reading.jpg" alt="Reading">
+                    <h3>Reading Books</h3>
+                    <p>I love reading, mystery novels and history books. Lately into personal development too.</p>
+                </div>
+            </div>
+        </section>
     </main>
 </body>
 </html>
+
