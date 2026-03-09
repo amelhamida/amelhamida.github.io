@@ -1,18 +1,17 @@
 Reflection
 
-1. HTTP Request Path:
+1. Difference between flex-direction: row and flex-direction: column:
 
-When I type my website URL in a browser:
-1. Browser checks cache - Looks for saved info about the site
-2. DNS lookup* - Finds the IP address for github.io
-3. Request sent - Browser asks GitHub's servers for my site files
-4. Response - GitHub sends back HTML, CSS, and images
-5. Browser renders - Displays my website on screen
+flex-direction: row (default) arranges items horizontally from left to right. This is useful for navigation bars, horizontal menus, or placing items side by side.
 
-2. Docker vs GitHub Pages:
+flex-direction: column arranges items vertically from top to bottom. This is useful for mobile layouts, stacking content, or vertical navigation.
 
-A Docker container is a complete and customizable environment that can run anywhere with its own operating system, databases, and backend code, while GitHub Pages only hosts static files (HTML, CSS, JavaScript) with no server-side processing. The main difference is that Docker gives me full control over the environment like a virtual computer, and GitHub Pages is just for displaying built files with no backend capabilities.
+
+2. Why use relative units (like %, vh, or rem) instead of fixed pixels (px) for responsive design?:
+
+Relative units are important for responsive design because they scale based on screen size, browser settings, or parent elements. Pixels are fixed and don't change, which can cause layouts to break on different devices. For example, using % for widths allows content to fill available space, rem respects user font size preferences, and vh/vw ensures elements scale with the viewport.
+
 
 3. AI Attribution:
 
-I used ChatGPT for help with syntax questions like "how do I create a table in HTML" and "can you explain CSS specificity." One mistake the AI made was suggesting inline styles, which wouldn't work for this assignment. I fixed it by using #skills ul to override the regular ul selector.
+I used ChatGPT for help me changed the colors to green/orange/beige colors fro a warmer theme. I also asked or help to adjusted the spacing and padding for the gallery section to make it responsive.
